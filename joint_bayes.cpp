@@ -38,7 +38,7 @@ Mat cal_PCA( map<string, Mat> data, int n_reduced, Mat& eigenvectors)
                 for(int i = 0; i < md; i++)
                 {
                         label.push_back(iter->first);
-                        all.push_back(iter->second(i));
+                        all.push_back(iter->second.row(i));
                 }
                 count += md;
         }
